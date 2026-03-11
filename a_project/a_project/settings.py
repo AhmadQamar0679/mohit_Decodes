@@ -25,7 +25,7 @@ SECRET_KEY = 'django-insecure-qpfl9=&#$dt_#1_-@$4g@z7=#s(r1q!@&&w)(k16xia#=%k0fa
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = ['192.168.3.127']
+ALLOWED_HOSTS = []
 
 
 # Application definition
@@ -40,7 +40,8 @@ INSTALLED_APPS = [
     "django_browser_reload",
 ]
 EXTERNAL_APPS=[
-    'b_blog'
+    'b_blog',
+    'c_shop'
 
 ]
 INSTALLED_APPS+=EXTERNAL_APPS
