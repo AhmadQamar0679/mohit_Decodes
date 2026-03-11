@@ -6,7 +6,27 @@
 
 
 {% block content %}
+<h1>Single Variables</h1>
+<p>Name:{{name}}</p>
+<p>Age: {{age}}</p>
+<hr>
+<h1>List Access</h1>
+<p>First Skill:   {{skills.0}} </p>
+<p>Second Skill:  {{skills.1}} </p>
+<p>Third Skill:   {{skills.2}} </p>
+<p>Forth Skill:   {{skills.3}} </p>
+<h3>Get all elements from at once</h3>
+<p>Skills: {{skills}}</p>
+<hr>
+<h1>Object Attributes</h1>
+<p>User Name: {{user.name}}</p>
+<p>User Age: {{user.age}}</p>
+<hr>
+<h1>Access Dictonery</h1>
+<p>Blog Title: {{blog.title}}</p>
+<p>Blog content: {{blog.content}}</p>
+<p>Blog Time: {{blog.created_at}}</p>
 
-<h1>Hi!</h1>
+
   
 {% endblock content %}
