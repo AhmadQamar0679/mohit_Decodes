@@ -24,7 +24,37 @@ def  home(request):
         'empty_value':None
 
     }
-    return render(request,f'home.html',context)
+    return render(request,'home.html',context)
+
+
+
+
+
+
+
+
+# blog detail lecture 14
+
+
+def blog_detail(request):
+    post={
+        'title':'This is post template render by blog page!',
+        'description':"Django os high level Web language"
+
+    }
+    return render(request,'blog_detail.html',{'post':post})
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
