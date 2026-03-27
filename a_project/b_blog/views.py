@@ -26,13 +26,7 @@ def  home(request):
     }
     return render(request,'home.html',context)
 
-
-
-
-
-
-
-
+ 
 # blog detail lecture 14
 
 
@@ -51,3 +45,11 @@ def blog_detail(request):
 
 def about(request):
     return render(request,'about.html')
+
+
+
+# Lecture 15  templates
+
+
+def blog_list(request):
+    return render(request,'blog_list.html')
