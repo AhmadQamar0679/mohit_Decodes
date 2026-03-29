@@ -1,0 +1,12 @@
+body{
+ 
+    font-family: 'Courier New', Courier, monospace;
+    background-color: gray;
+    text-align: center;
+    padding: 20px;
+}
+nav ul{
+    display: inline;
+    margin-right: 10px;
+
+}

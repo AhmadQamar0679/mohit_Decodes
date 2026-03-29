@@ -52,4 +52,12 @@ def about(request):
 
 
 def blog_list(request):
-    return render(request,'blog_list.html')
+    blogs=[
+        {'title':'Hi my name is ahmad qamar and i am learning Advance Django'}
+
+    ]
+    context={
+        "blogs":blogs
+
+    }
+    return render(request,'blog_list.html',context)

@@ -1,4 +1,5 @@
 {% extends "base.html" %}
+{% load static %}
 
 
 {% block title %}
@@ -8,6 +9,14 @@
 
 
 {% block content %}
-<h1>Hi blog list</h1>
-  
+
+<h1>Welcome to Blog Page</h1>
+<img src="{% static "images/download.jpg" %}" alt="home image">
+<form method='POST'>
+    {% csrf_token %}
+    <input type="text" name='username' placeholder='username'>
+    <input type="passward" name='passward' placeholder='passward'>
+    <button type='submit'>Login</button>
+    <button onclick='showalart'>Click me</button>
+</form>
 {% endblock content %}
