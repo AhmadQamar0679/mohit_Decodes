@@ -1,4 +1,4 @@
-from django.shortcuts import render
+from django.shortcuts import render,redirect
 from django.http import HttpResponse
 from datetime  import datetime
 
@@ -52,12 +52,11 @@ def about(request):
 
 
 def blog_list(request):
-    blogs=[
-        {'title':'Hi my name is ahmad qamar and i am learning Advance Django'}
-
+    student_list=[
+        {'name':'Ahmad','class':'14th'},
+        {'name':'Hamza','class':'15th'},
+        {'name':'Ali','class':'16th'},
     ]
-    context={
-        "blogs":blogs
-
-    }
-    return render(request,'blog_list.html',context)
+   
+    return render(request,'blog_list.html')
+ 

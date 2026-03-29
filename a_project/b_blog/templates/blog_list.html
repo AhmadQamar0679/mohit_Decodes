@@ -9,7 +9,7 @@
 
 
 {% block content %}
-
+{% include "navbar.html" %}
 <h1>Welcome to Blog Page</h1>
 <img src="{% static "images/download.jpg" %}" alt="home image">
 <form method='POST'>
@@ -17,6 +17,6 @@
     <input type="text" name='username' placeholder='username'>
     <input type="passward" name='passward' placeholder='passward'>
     <button type='submit'>Login</button>
-    <button onclick='showalart'>Click me</button>
+    <button onclick='showalart'>Click</button>
 </form>
 {% endblock content %}
