@@ -4,6 +4,15 @@ from d_student . models import Student_detail
 
 
 
-admin.site.register(Student_detail)
+# admin.site.register(Student_detail)
 
-# Register your models here.
+@admin.register(Student_detail)
+
+class StudentAdmin(admin.ModelAdmin):
+
+    list_display=('name',"age","city")
+    search_fields=('name','age','city')
+    list_filter=('age','city')
+    ordering=('name',)
+
+
