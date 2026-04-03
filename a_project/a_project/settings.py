@@ -42,6 +42,7 @@ INSTALLED_APPS = [
 EXTERNAL_APPS=[
     'b_blog',
     'c_shop',
+    'd_student',
   
 
 ]
