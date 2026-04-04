@@ -43,6 +43,7 @@ EXTERNAL_APPS=[
     'b_blog',
     'c_shop',
     'd_student',
+    'e_contact',
   
 
 ]

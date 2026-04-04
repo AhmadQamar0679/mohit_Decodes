@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>contact</title>
+</head>
+<body>
+    <form action="{% url 'submit_page'%}" method="POST">
+        {% csrf_token %}
+        <label for="name">Name:</label><br>
+        <input type="text" id='name' name='name' required><br>
+        <label for="message" >Message:</label><br>
+
+        <input type="text" id='message' name='message'required><br>
+
+        <input type="submit" value='submit'>
+    </form>
+
+    {% for message in all_messages %}
+        <h1>name: {{message.name}}</h1>
+        <h1>messages: {{message.message}}</h1>
+    {% endfor %}
+    
+</body>
+</html>
