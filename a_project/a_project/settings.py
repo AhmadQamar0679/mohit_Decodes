@@ -44,6 +44,7 @@ EXTERNAL_APPS=[
     'c_shop',
     'd_student',
     'e_contact',
+    'f_todo',
   
 
 ]
