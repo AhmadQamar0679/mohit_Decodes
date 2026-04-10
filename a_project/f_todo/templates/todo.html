@@ -9,6 +9,13 @@
 
 {% block content %}
 
-<h1>Todo</h1>
+<h1>Add Students here</h1>
+
+<form method='POST' action="">
+    {% csrf_token %}
+    {{form.as_p}}
+    <button type='submit'>Submit</button>
+
+</form>
 
 {% endblock content %}
